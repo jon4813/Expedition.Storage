@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Orders]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+    [CustomerId] UNIQUEIDENTIFIER NOT NULL,
+    [CreateDate] DATETIME NOT NULL,
+    [Amount] DECIMAL(15, 4) NOT NULL,
+    [Currency] UNIQUEIDENTIFIER NOT NULL,
+    [Status] INT NOT NULL,
+    [Descriptions] NVARCHAR(MAX) NULL,
+    [LoadDate] DATETIME NULL,
+	[RowVersion] ROWVERSION NOT NULL,
+)

@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Regions]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL,
+    [CountryId] UNIQUEIDENTIFIER NOT NULL,
+    [Name] NVARCHAR(50) NOT NULL,
+    [RowVersion] ROWVERSION NOT NULL
+	CONSTRAINT PK_CountryId_Id PRIMARY KEY CLUSTERED([CountryId], [Id]),
+	CONSTRAINT [FK_Resions_Countries] FOREIGN KEY ([CountryId]) REFERENCES [Countries]([Id])
+)

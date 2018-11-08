@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Partners]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(255) NOT NULL, 
+    [Address] NVARCHAR(MAX) NULL,         
+	[RowVersion] ROWVERSION NOT NULL, 
+)
