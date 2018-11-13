@@ -75,7 +75,6 @@
     <Build Include="Tables\OrderLinePayments.sql" />
     <Build Include="Tables\OrderPayments.sql" />
     <Build Include="Tables\OrderPaths.sql" />
-    <Build Include="Tables\RegionsMappings.sql" />
     <Build Include="Tables\OrderLineContractorTransports.sql" />
     <Build Include="Tables\CurrencyRates.sql" />
   </ItemGroup>
